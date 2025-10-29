@@ -1,23 +1,18 @@
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
-import raffleRoutes from "./routes/raffles.js";
+import rafflesRouter from "./routes/raffles.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
 
-// Middleware for JSON (important for API)
-app.use(express.json());
+app.use("/api/raffles", rafflesRouter);
 
-// Raffle API routes
-app.use("/api/raffles", raffleRoutes);
-
-// Serve built frontend
+// Serve static files from the client build
 app.use(express.static(path.join(__dirname, "../client/dist")));
 
-// Fallback route for React Router
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/dist/index.html"));
 });
