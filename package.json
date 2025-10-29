@@ -1,0 +1,9 @@
+{
+  "name": "raffle-rumble-render",
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "(cd client && npm install) && (cd server && npm install)",
+    "build": "cd client && npm install && npm run build",
+    "start": "node server/index.js"
+  }
+}

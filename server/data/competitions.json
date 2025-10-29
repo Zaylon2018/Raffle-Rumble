@@ -1,0 +1,27 @@
+[
+  {
+    "id": "comp1",
+    "title": "\u00a31 Million Dream Home",
+    "cash_alternative": "\u00a3750,000 Cash Alternative",
+    "images": [
+      "/assets/placeholder1.jpg"
+    ],
+    "tickets_sold": 760000,
+    "tickets_total": 1000000,
+    "price_per_ticket": 0.29,
+    "description": "Demo competition.",
+    "ends_at": "2025-11-05T20:00:00Z"
+  },
+  {
+    "id": "comp2",
+    "title": "\u00a350,000 Tax-Free",
+    "cash_alternative": "\u00a350,000 Cash Alternative",
+    "images": [
+      "/assets/placeholder2.jpg"
+    ],
+    "tickets_sold": 250000,
+    "tickets_total": 500000,
+    "price_per_ticket": 0.25,
+    "description": "Demo competition."
+  }
+]
