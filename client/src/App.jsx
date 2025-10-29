@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 
-const apiBase = '/api'
+const apiBase = "/api"
 
 function Nav({cartCount}){
   return (
