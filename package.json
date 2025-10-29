@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "install:all": "(cd client && npm install) && (cd server && npm install)",
-    "build": "npm run install:all && cd client && npm run build",
+    "build": "npm run install:all && cd client && npx vite build",
     "start": "node server/index.js"
   }
 }
